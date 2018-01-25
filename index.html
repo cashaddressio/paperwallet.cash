@@ -31,7 +31,7 @@
     * Donations are shared between Canton Becker, Artiom Chilaru (BIP38 implementation)
     * Martin Ankerl (guilloche patterns), and 'pointbiz' (original bitaddress.org code)
     * Bitcoin Donation Address: 1Pjg628vjMLBvADrPHsthtzKiryM2y46DG
-	* GitHub Repository: 	https://github.com/cantonbecker/bitcoinpaperwallet
+	* GitHub Repository: 	https://github.com/cantonbecker/bitcoinpaperwallet  (original project)
     ****************************************************************************************
 	* The starting point for this code was the excellent single-file bitaddress.org project.
     * Bitcoin Donation Address: 1NiNja1bUmhSoTXozBRBEtR8LeF9TGbZBN
@@ -81,10 +81,8 @@
 	WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE 
 	SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-	GitHub Repository: https://github.com/cantonbecker/bitcoinpaperwallet
+	GitHub Repository: https://github.com/cashaddressio/paperwallet.cash
 	-->
-
-	<meta charset="utf-8">
 
 <script type="text/javascript">
 
@@ -11003,7 +11001,9 @@ Bitcoin.Util = {
     
 </head>
 <body onclick="SecureRandom.seedTime();" onmousemove="ninja.seeder.seed(event);" ontouchmove="ninja.seeder.seed(event);" 
-	  onLoad="setDesign(ninja.getQueryString()['design'], true, ninja.getQueryString()['lang']); guessPrinterSettings(); ">
+	  onLoad="setDesign('bitcoincash', false, ninja.getQueryString()['lang']); guessPrinterSettings(); ">
+	  <!-- onLoad="setDesign(ninja.getQueryString()['design'], true, ninja.getQueryString()['lang']); guessPrinterSettings(); "> -->
+
 	<div id="busyblock">
 		<div class="background"></div>
 		<div class="dialog dialog-narrow">
