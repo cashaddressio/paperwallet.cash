@@ -10536,7 +10536,7 @@ Bitcoin.Util = {
     
 </head>
 <body onclick="SecureRandom.seedTime();" onmousemove="ninja.seeder.seed(event);" ontouchmove="ninja.seeder.seed(event);" 
-	  onLoad="setDesign('bitcoincash', false, ninja.getQueryString()['lang']); guessPrinterSettings(); ">
+	  onLoad="setDesign(ninja.getQueryString()['design'], false, ninja.getQueryString()['lang']); guessPrinterSettings(); ">
 	  <!-- onLoad="setDesign(ninja.getQueryString()['design'], true, ninja.getQueryString()['lang']); guessPrinterSettings(); "> -->
 
 	<div id="busyblock">
@@ -13943,7 +13943,7 @@ function setDesign (whichDesign, isOnLoad, whichLanguage) {
 	
 	drawOpts.text = translations[whichLanguage];
 
-	if (!whichDesign) whichDesign = 'default';	
+	if (!whichDesign) whichDesign = 'bitcoincash';	
 
 	// show the language menu if we're using the default design
 	if (whichDesign == 'default') {
